@@ -4,7 +4,6 @@ Ce dépôt est consacré au projet Goutte d'eau, développé dans le cadre de l'
 # Architecture
 
 ```mermaid
-```mermaid
 flowchart TD
     A[API météo] --> B[Collecte]
     B --> C[Nettoyage]
