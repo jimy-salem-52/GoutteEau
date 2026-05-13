@@ -12,4 +12,6 @@ flowchart LR
     E --> F[XGBoost]
     F --> G[Inférence]
     G --> H[Risque de pluie]
+    I[Site web / Interface utilisateur] --> G
+    H --> I
 ```
