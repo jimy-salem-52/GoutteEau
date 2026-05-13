@@ -4,18 +4,13 @@ Ce dépôt est consacré au projet Goutte d'eau, développé dans le cadre de l'
 # Architecture
 
 ```mermaid
+```mermaid
 flowchart TD
-    A[Infoclimat API] --> B[Collecte des données météo]
-    B --> C[Nettoyage et préparation]
-    C --> D[(Stockage SQLite / CSV / Parquet)]
-    C --> E[Entraînement des modèles ML]
-    E --> F[Évaluation des modèles]
-    F --> G[Meilleur modèle : XGBoost]
-    G --> H[Modèle sauvegardé]
-    H --> I[Inférence]
-    I --> J[Prédiction du risque de pluie]
-    J --> K[Utilisateur / Agriculteur]
-
-    L[Interface future] --> I
-    M[API de prédiction future] --> I
+    A[API météo] --> B[Collecte]
+    B --> C[Nettoyage]
+    C --> D[(CSV / Parquet / SQLite)]
+    C --> E[Modèles ML]
+    E --> F[XGBoost]
+    F --> G[Inférence]
+    G --> H[Risque de pluie]
 ```
