@@ -1,0 +1,21 @@
+{
+    "best_model_name": "xgboost",
+    "best_model_kind": "sklearn",
+    "model_filename": "rain_best_model.joblib",
+    "preprocessor_filename": "rain_preprocessor.joblib",
+    "feature_columns": [
+        "temperature",
+        "pression",
+        "humidite",
+        "point_de_rosee",
+        "vent_moyen",
+        "vent_direction",
+        "station_latitude",
+        "station_longitude",
+        "station_elevation",
+        "hour",
+        "month",
+        "day_of_year"
+    ],
+    "target_column": "rain_risk"
+}

@@ -1,0 +1,10 @@
+joblib
+pandas
+numpy
+requests
+matplotlib
+scikit-learn
+xgboost
+tensorflow
+fastparquet
+pyarrow
