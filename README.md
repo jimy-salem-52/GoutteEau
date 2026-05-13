@@ -4,10 +4,10 @@ Ce dépôt est consacré au projet Goutte d'eau, développé dans le cadre de l'
 # Architecture
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[API météo] --> B[Collecte]
     B --> C[Nettoyage]
-    C --> D[(CSV / Parquet / SQLite)]
+    C --> D[(SQLite / CSV / Parquet)]
     C --> E[Modèles ML]
     E --> F[XGBoost]
     F --> G[Inférence]
